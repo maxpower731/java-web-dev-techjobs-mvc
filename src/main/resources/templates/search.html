@@ -36,6 +36,7 @@
 
     <hr />
 
+    <p th:if="${length}" th:text="'Number of results: ' + ${length}"></p>
     <div th:replace="fragments :: job-listing-table"></div>
 
 </div>

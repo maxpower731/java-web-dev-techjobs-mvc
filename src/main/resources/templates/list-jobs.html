@@ -9,6 +9,7 @@
 <div class="container body-content">
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
+    <p th:text="'Number of results: ' + ${length}"></p>
 
     <div th:replace="fragments :: job-listing-table"></div>
 
